@@ -5,37 +5,44 @@ type User = {
         lastName: string;
     },
     gender: "male" | "female";
-    contactNumber?: string;
+    contactNo: string;
     address: {
         division: string;
-        district: string;
+        city: string;
     }
 }
 
+const user1:User = {
+    id: 1,
+    name: {
+        firstName: "Md",
+        lastName: "Akash"
+    },
+    gender: "male",
+    contactNo: "01700000000",
+    address:{
+        division: "Khulna",
+        city: "Magura"
+    }
+}
 
-const user1: User = {
-  id: 123,
-  name: {
-    firstName: "John",
-    lastName: "Doe",
-  },
-  gender: "male",
-  contactNumber: "123-456-7890",
-  address: {
-    division: "Dhaka",
-    district: "Dhaka"
-  }
-};
 
 const user2: User = {
-    id: 456,
+    id: 2,
     name: {
-        firstName: "Jane",
-        lastName: "Smith",
+        firstName: "Md",
+        lastName: "Riaz"
     },
-    gender: "female",
-    address: {
-        division: "Chittagong",
-        district: "Chittagong"
+    gender: "male",
+    contactNo: "01700000001",
+    address:{
+        division: "Dhaka",
+        city: "Dhaka"
     }
 }
+
+// function
+
+type AddFunction = (num1: number, num2: number) => number;
+
+const add: AddFunction = (num1, num2) => num1 + num2;
