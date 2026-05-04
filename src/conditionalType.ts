@@ -1,17 +1,15 @@
-// conditional type:
-
 type A = null;
 type B = undefined;
 
 type C = A extends number ? true : B extends undefined ? true : false;
 
-type RichPeoplesVehicle = {
-  bike: string;
+
+type RichPeopleVehicle = {
   car: string;
+  bike: string;
   ship: string;
-};
+}
 
-type CheckVehicle<T> = T extends keyof RichPeoplesVehicle ? true : false;
+type CheckVehicle<T> = T extends keyof RichPeopleVehicle ? true : false;
 
-
-type HasBike = CheckVehicle<"ship">
+type hasBike = CheckVehicle<"bike">
