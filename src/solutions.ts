@@ -12,7 +12,7 @@ const filterEvenNumbers = (numbers: number[]): number[] => {
 
 const result1 = filterEvenNumbers([1, 2, 3, 4, 5, 6]);
 
-// console.log(result1)
+
 
 // Problem 2: solution
 
@@ -23,7 +23,7 @@ const reverseString = (inputValue: string): string => {
 
 const result2 = reverseString("typescript");
 
-// console.log(result2)
+
 
 // Problem 3: solution
 
@@ -39,7 +39,7 @@ const checkType = (input: StringOrNumber) => {
 
 const result3 = checkType("Hello");
 
-// console.log(result3)
+
 
 // Problem 4: solution
 
@@ -51,7 +51,7 @@ const user = { id: 1, name: "John Doe", age: 21 };
 
 const result4 = getProperty(user, "name");
 
-// console.log(result4)
+
 
 // Problem 5: solution
 
@@ -75,7 +75,7 @@ const myBook = {
 };
 const result5 = toggleReadStatus(myBook);
 
-// console.log(result5);
+
 
 // Problem 6: solution
 
@@ -105,7 +105,7 @@ class Student extends Person {
 const student = new Student("Alice", 20, "A");
 const result6 = student.getDetails();
 
-// console.log(result6);
+
 
 // Problem 7: solution
 
@@ -118,4 +118,4 @@ const array1 = [1, 2, 3, 4, 5];
 const array2 = [3, 4, 5, 6, 7];
 
 const intersection = getIntersection(array1, array2);
-// console.log(intersection); 
+
